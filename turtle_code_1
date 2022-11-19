@@ -1,1 +1,9 @@
 set deez_nutz = 0;
+o(deez_nutz != -1){
+z(deez_nutz == 0){
+    deez_nutz = - 1;
+}
+p{
+    deez_nutz = 1
+}
+}
