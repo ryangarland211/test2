@@ -5,7 +5,7 @@ Everything else should be in "test2.ipynb"
 
 Part B. Productions
 
-<stmt> --> <block> | <if_stmt> | <while_loop> | <assignment>
+<stmt> --> <block> | <if_stmt> | <while_loop> | <assignment> | <do_while> | <for_loop>
 <block> --> `{`{<stmt> `;` }`}`
 <if_stmt>   -->  `maybe``(`<bool_stmt> `)`<stmt>[`probably ` <stmt>]
 <do_while> --> `bing` <block> <while_loop>
@@ -15,7 +15,7 @@ Part B. Productions
 <expr> --> <term> {(`+`|`-`)<term>}
 <term> --> <factor>{(`*`|`/`|`%`)<factor>}
 <factor> -->  `a` | `b`|`c`|`d`|`{ ` <expr> `}`
-
+<bool_stmt> --> T | F
 
 
 
@@ -26,3 +26,24 @@ All the rules conform to the standard of LL Grammar. The pairwise disjointness t
 Part D. Unambigious 
 
 The previous part effectively confirms the grammar is unambigious because there is no way for the grammar to generate a multiple paths for a program using this language.
+
+Part H. LR parse table key 
+
+S = Statement 
+B = block
+I = if statement
+F = for loop
+W = while loop
+A = Assignment
+D = do while loop
+O = boolean statement
+m = maybe
+p = proabably
+g = bing
+h = bong
+t = turtle
+T = term
+f = factor
+E/e = expression
+s = set
+
